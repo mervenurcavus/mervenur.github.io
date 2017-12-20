@@ -1,38 +1,7 @@
-package githubprojesi;
+import java.io.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-/**
- *
- * @author dell
- */
-public class GitHubProjesi {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) throws IOException {
-        
-         String giris;
-
-                BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
-
-                System.out.println("Roma rakamini giriniz:  ");
-
-                giris = b.readLine();
-
-                cevir c = new cevir();
-
-                c.cevcev(giris);
-        // TODO code application logic here
-    }
-    
-}
-class cevir {
-    
-    
+class cevir
+{
         public void cevcev(String girdi)
         {
                 int toplam = 0;
@@ -91,5 +60,27 @@ class cevir {
 
 
                 System.out.println(toplam);
-    
+        }
+}
+
+public class roma
+{
+
+        public static void main(String args[]) throws IOException
+        {
+
+                String giris;
+
+                BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+
+                System.out.println("Roma rakamini giriniz:  ");
+
+                giris = b.readLine();
+
+                cevir c = new cevir();
+
+                c.cevcev(giris);
+
+        }
+
 }
